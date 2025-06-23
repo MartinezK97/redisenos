@@ -1,0 +1,62 @@
+.portada{
+    min-height: calc(100vh - 4rem);
+    background-image:url(../img/background/portada.webp) ;
+    background-size: cover;
+    background-position: 50% 0%;
+    background-attachment: fixed;
+    display: grid;
+    align-content: center;
+    position: relative;
+}
+
+.portada:after{
+    content: "";
+    inset: 0;
+    position: absolute;
+    background: var(--blue);
+    opacity: 0.75;
+    z-index: 0;
+}
+
+.portada .container{
+    width: clamp(200px, calc(100vw - 2rem), 1200px);
+    margin: auto;
+    display: grid;
+    grid-gap: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.portada h1, .portada h2{
+    color: #fff;
+
+}
+
+.portada h1 {
+    font-size: clamp(1.5rem, 1.75vw, 2rem);
+}
+.portada h2 {
+    font-size: clamp(2.5rem, 3.75vw,4.25rem);
+}
+
+.portada a{
+    background-color: var(--cyan);
+    color: var(--blue);
+    display: block;
+    max-width: max-content;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-weight: 600;
+    margin: 2rem 0;
+    font-size: clamp(1.2rem, 1.5vw, 1.75rem);
+    transition: 0.3s ease;
+    font-size: clamp(1.1rem, 1.25vw, 1.5rem);
+    font-weight: 600;
+    color: var(--blue);
+    padding: 0.75rem 1.75rem;
+    display: block;
+}
+
+.portada a:hover{
+    transform: scale(1.025);
+}

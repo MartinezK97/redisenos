@@ -1,0 +1,45 @@
+header {
+    background-color: var(--blue);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+header .container {
+    display: grid;
+    grid-template-columns: max-content auto;
+    width: clamp(200px, calc(100vw - 2rem), 1200px);
+    margin: 0 auto;
+}
+
+header .container .logo-header img {
+    height: 4rem;
+    width: 10rem;
+    align-self: center;
+    display: block;
+    aspect-ratio: 1/1;
+}
+
+header .container nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: max-content;
+    margin: 0 0 auto auto;
+}
+
+header .container nav a {
+    display: block;
+    /* border: solid 1px ; */
+    max-height: min-content;
+    align-self: center;
+    text-align: center;
+    padding: 0.25rem 1rem 0.5rem;
+    color: var(--cyan);
+}
+
+@media (width < 1000px){
+    header .container nav{
+        display: none;
+    }
+}

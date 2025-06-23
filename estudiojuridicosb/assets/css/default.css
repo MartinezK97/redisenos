@@ -1,0 +1,19 @@
+:root{
+    --blue:#0a1a2a;
+    --cyan:#76faf1;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+    text-decoration: none;
+    outline: none;
+    line-height: 1.25;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#d4daff;
+}
+
