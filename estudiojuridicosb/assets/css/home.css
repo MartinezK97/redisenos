@@ -340,6 +340,7 @@
     grid-gap: 1rem;
     max-width: max-content;
     margin: 0 auto ;
+    padding-bottom: 2rem;
 }
 .redes-sociales a i{
     color: #fff;
@@ -360,7 +361,8 @@
 
 @media(width < 760px){
     #quienes-somos .container,
-    .servicios .content-services{
+    .servicios .content-services,
+    .footer .container .grupo-1 {
         grid-template-columns: 1fr;
     }
     #quienes-somos .container .title-section{
