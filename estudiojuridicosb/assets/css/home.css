@@ -315,8 +315,11 @@
         grid-column: 1/2;
     }
 
-    .servicios .container,
-    .resenas .container
+    .servicios .service{
+        padding: 1rem;
+    }
+    .resenas .container,
+    .servicios .container
     {
         padding: 0;
     }
