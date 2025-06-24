@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
 :root{
-    --blue:#0a1a2a;
+    --blue:#094077;
+    --dark-blue:#0a1a2a;
     --cyan:#76faf1;
 }
 
 *{
     box-sizing: border-box;
-    font-family: "Playfair Display", serif;
+    font-family: "Roboto Serif", serif;
     text-decoration: none;
     outline: none;
     line-height: 1.25;
@@ -14,6 +17,46 @@
 body{
     margin: 0;
     padding: 0;
-    background-color:#d4daff;
+    /* background-color:#0b1e32;*/
+        background-color:#bddde0;
 }
 
+
+#wpp-btn{
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    filter: drop-shadow(0 2px 15px #000);
+    z-index: 7;
+}
+
+
+#wpp-btn i{
+    background-color: green;
+    color: #fff;
+    width: 4rem;
+        height: 4rem;
+        font-size: 2.5rem;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+}
+
+#wpp-btn span {
+    background-color: green;
+    max-height: min-content;
+    align-self: center;
+    color: #fff;
+    border-radius: 25px 0 0 25px;
+    padding: 0.75rem 2rem 0.75rem 2rem;
+    margin-right: -2rem;
+    display: block;
+}
+
+@media(width < 760px){
+    #wpp-btn span {
+        display: none;
+    }
+}

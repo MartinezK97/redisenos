@@ -1,0 +1,68 @@
+.mini-portada{
+    padding:2rem 1rem 4rem;
+    text-align: center;
+    color: #fff;
+   background-image: url(https://estudiojuridicosb.com.uy/images/duotone2.webp);
+    clip-path:polygon(0 0, 100% 0, 100% calc(100% - 3rem), 50% 100%, 0 calc(100% - 3rem)) ;
+}
+
+#informacion-y-noticias .container{
+    margin: 0 auto;
+    width: clamp(200px, calc(100% - 4rem), 1200px);
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.container .new{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px -5px;
+    overflow: hidden;
+}
+.container .new> .img {
+    background-color: #0002;
+    display: block;
+    width:calc(100% + 4rem);
+    padding-bottom: calc(100% + 4rem);
+    margin: -2rem -2rem;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 1.5rem), 50% 100%, 0 calc(100% - 1.5rem));
+    position: relative;
+}
+
+.container .new>.img i{
+    color: #0002;
+    font-size: 10rem ;
+    position: absolute;
+    max-width: min-content;
+    max-height: min-content;
+    margin: auto auto;
+    inset: 0;
+}
+
+.container .new > a{
+    color: var(--blue);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 2.5rem  0 1rem;
+    display: block;
+}
+
+.container .new>a.cta {
+    background-color: var(--blue);
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+    color: #fff;
+    margin: 1.5rem 0 auto auto;
+    display: block;
+    max-width: max-content;
+}
+
+@media(width < 760px){
+    #informacion-y-noticias .container {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+}

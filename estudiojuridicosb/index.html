@@ -6,39 +6,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Site Verification -->
-    <!-- <meta name="google-site-verification" content="iUouaduzaEGpj1LP-N2h5VlxsaTocVD4E0nkXqrhL1Q" /> -->
 
-    <meta name="keywords" content="abogado en Montevideo, abogados laborales, abogados en Uruguay, abogado derecho familiar, abogado derecho civil Montevideo, asesoría legal Montevideo, abogado penalista Montevideo">
-    <meta name="description" content="¿Necesitas un abogado en Montevideo? En Suárez Bittencourt ofrecemos asesoría legal experta en Derecho Civil, Laboral, Familiar y más. Contáctanos para recibir la orientación que necesitas.">
-    <meta name=" author" content="Lucas Gabriel Suárez Bittencourt">
-    <meta name="robots" content="index">
-    <meta property="og:image" content="images/logoColor.jpeg">
     <title>Abogados en Montevideo - Suárez Bittencourt | Asesoría Legal en Familia, Laboral y Más</title>
-    <!-- <link rel="stylesheet" href="style.css" async> -->
-    
+    <meta name="theme-color" content="#0a1a2a">
     <link rel="stylesheet" href="./assets/css/default.css" async>
     <link rel="stylesheet" href="./assets/css/header.css" async>
+    <link rel="stylesheet" href="./assets/css/menu.css" async>
     <link rel="stylesheet" href="./assets/css/portada.css" async>
     <link rel="stylesheet" href="./assets/css/home.css" async>
+    <link rel="stylesheet" href="./assets/css/footer.css" async>
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap">
+    </noscript>
 
-
-    <link rel="preload" as="image" href="https://estudiojuridicosb.com.uy/images/duotone.webp" alt="Abogado en Montevideo">
-    <link rel="preload" as="image" href="https://estudiojuridicosb.com.uy/images/duotone2.webp" alt="Abogado en Montevideo">
-    <link rel="preload" as="image" href="https://estudiojuridicosb.com.uy/images/duotone3.webp" alt="Abogado en Montevideo">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="https://estudiojuridicosb.com.uy/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap">
-    </noscript>
-    <link rel="preload" as="image" href="https://estudiojuridicosb.com.uy/images/duotone.webp">
-    <link rel="preload" as="image" href="https://estudiojuridicosb.com.uy/images/duotone2.webp">
-    <link rel="preload" as="image" href="https://estudiojuridicosb.com.uy/images/duotone3.webp">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -53,14 +41,21 @@
                <img src="./assets/img/logo.svg" alt="">
            </a>
             <nav>
-                <a href='https://estudiojuridicosb.com.uy/quienessomos'>Quienes Somos</a>
-                <a href='https://estudiojuridicosb.com.uy/nuestrotrabajo'>Nuestro Trabajo</a>
-                <a href='https://estudiojuridicosb.com.uy/infoenews'>Información y noticias.</a>
-                <a href='https://estudiojuridicosb.com.uy/contacto'>Contacto</a>
+                <a href='./quienes-somos'>Quienes Somos</a>
+                <a href='./nuestro-trabajo'>Nuestro Trabajo</a>
+                <a href='./informacion-y-noticias'>Información y noticias.</a>
+                <a href='#contactos'>Contacto</a>
             </nav>
         </div>
-
     </header>
+    <menu id="menu">
+        <button class="btn-menu"><i class="fa fa-bars"></i></button>
+        <a href="" title="">Inicio</a>
+        <a href="./quienes-somos/" title="">Quienes Somos</a>
+        <a href="./nuestro-trabajo/" title="">Nuestro Trabajo</a>
+        <a href="./informacion-y-noticias/" title="">Información y Noticias</a>
+        <a href="#contactos" title="">Contactos</a>
+    </menu>
     <section class="portada">
         <div class="">
             <div class="container">
@@ -130,7 +125,7 @@
                     <a href="#">Leer más</a>
                 </article>
             </div>
-            <a href="#" class="cta">Conocé Todas las Noticias</a>
+            <a href="#" class="cta"><i class="fa fa-newspaper"></i> Conocé Todas las Noticias</a>
         </div>
     </section>
 
@@ -327,6 +322,11 @@
             
         </p>
     </footer>
+    <a href="#" id="wpp-btn">
+        <span>Envíanos tu caso</span>
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <script src="./assets/js/menu.js"></script>
     </body>
 
 </html>

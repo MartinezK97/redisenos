@@ -1,5 +1,5 @@
 header {
-    background-color: var(--blue);
+    background-color: var(--dark-blue);
     padding: 0.5rem 0;
     position: sticky;
     top: 0;
@@ -9,8 +9,9 @@ header {
 header .container {
     display: grid;
     grid-template-columns: max-content auto;
-    width: clamp(200px, calc(100vw - 2rem), 1200px);
+    width: clamp(200px, calc(100vw - 4rem), 1200px);
     margin: 0 auto;
+    align-content: center;
 }
 
 header .container .logo-header img {
@@ -23,9 +24,10 @@ header .container .logo-header img {
 
 header .container nav {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     max-width: max-content;
     margin: 0 0 auto auto;
+    height: 100%;
 }
 
 header .container nav a {

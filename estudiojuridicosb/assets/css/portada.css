@@ -7,10 +7,11 @@
     display: grid;
     align-content: center;
     position: relative;
+    z-index: 8;
 }
 
 .portada:after{
-    content: "";
+    /* content: ""; */
     inset: 0;
     position: absolute;
     background: var(--blue);
@@ -19,7 +20,7 @@
 }
 
 .portada .container{
-    width: clamp(200px, calc(100vw - 2rem), 1200px);
+    width: clamp(200px, calc(100vw - 4rem), 1200px);
     margin: auto;
     display: grid;
     grid-gap: 1rem;
@@ -29,7 +30,8 @@
 
 .portada h1, .portada h2{
     color: #fff;
-
+    padding: 0;
+    margin: 0;
 }
 
 .portada h1 {
