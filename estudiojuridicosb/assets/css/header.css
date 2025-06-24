@@ -28,6 +28,7 @@ header .container nav {
     max-width: max-content;
     margin: 0 0 auto auto;
     height: 100%;
+    max-width: min-content;
 }
 
 header .container nav a {
@@ -38,6 +39,7 @@ header .container nav a {
     text-align: center;
     padding: 0.25rem 1rem 0.5rem;
     color: var(--cyan);
+    min-width: max-content;
 }
 
 @media (width < 1000px){
